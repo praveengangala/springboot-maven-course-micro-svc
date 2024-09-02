@@ -1,0 +1,16 @@
+on: [push] 
+ jobs: 
+   build: 
+     runs-on: ubuntu-latest 
+     steps: 
+     - uses: actions/checkout@v1 
+     - name: Run a one-line script 
+       run: echo Hello, world! 
+     - name: java version 
+       run: java -version 
+     - name: java version 
+       run: mvn --version 
+     - name: python version 
+       run: python --version 
+     - name: docker version 
+       run: docker -v
